@@ -3,7 +3,6 @@ console.clear();
 const form = document.querySelector("form");
 const output = form.querySelector("output");
 const errorMessage = document.querySelector(".error");
-// console.log("p-element: ", errorMessage.innerText);
 const operations = {
   add: (a, b) => a + b,
   subtract: (a, b) => a - b,
@@ -33,5 +32,6 @@ form.addEventListener("submit", (event) => {
   } catch (error) {
     console.log(divideErrorMessage);
     errorMessage.innerText = divideErrorMessage;
+    output.innerText = "";
   }
 });
