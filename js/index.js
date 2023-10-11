@@ -2,7 +2,7 @@ console.clear();
 
 const form = document.querySelector("form");
 const output = form.querySelector("output");
-const errorMessage = document.querySelector('[data-js="errorMessage"]');
+const errorMessage = document.querySelector(".error");
 // console.log("p-element: ", errorMessage.innerText);
 const operations = {
   add: (a, b) => a + b,
