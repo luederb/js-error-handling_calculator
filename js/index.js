@@ -13,6 +13,7 @@ const operations = {
       throw new Error("Cannot divide by zero!");
     }
     console.log("divider: ", a / b);
+    errorMessage.innerText = "";
     return a / b;
   },
 };
